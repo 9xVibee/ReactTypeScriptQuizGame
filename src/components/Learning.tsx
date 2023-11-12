@@ -70,13 +70,6 @@ const Learning = () => {
         <Typography color={"blue"} variant="h4">
           : {words[count]?.meaning}
         </Typography>
-        <Button
-          sx={{
-            borderRadius: "50%",
-          }}
-        >
-          <VolumeUp />
-        </Button>
       </Stack>
       <Button
         sx={{
