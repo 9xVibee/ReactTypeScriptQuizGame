@@ -17,16 +17,19 @@ const Result = () => {
   const { words, result } = useSelector(
     (state: { root: StateType }) => state.root
   );
+
   const correctAns = countMatchingFeature(
     words.map((i) => i.meaning),
     result
   );
+
   const percentage = (correctAns / words.length) * 100;
 
   const resetHandler = (): void => {
     navigate("/");
     dispatch(clearState());
   };
+
   return (
     <Container maxWidth={"sm"}>
       <Typography variant="h3" color={"primary"} m={"2rem 0"}>
