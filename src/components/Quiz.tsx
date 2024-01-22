@@ -22,7 +22,7 @@ const Quiz = () => {
   const [ans, setAns] = useState<string>("");
   const navigate = useNavigate();
 
-  const { loading, words, error } = useSelector(
+  const { loading, words } = useSelector(
     (state: { root: StateType }) => state.root
   );
 

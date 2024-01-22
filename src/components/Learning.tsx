@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { ArrowBack, VolumeUp } from "@mui/icons-material";
+import { ArrowBack } from "@mui/icons-material";
 import { Button, Container, Typography, Stack } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
